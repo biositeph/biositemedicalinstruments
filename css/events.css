@@ -1,0 +1,53 @@
+/* Main Video Styling */
+.featured-video {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative; /* For positioning the play button */
+  }
+  
+  .featured-video video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Play Button Styling */
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  /* Show play button when video is paused */
+  .video-paused .play-button {
+    display: block;
+  }
+  
+  /* Thumbnail Styling */
+  .box a img {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .box a img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,98 @@
+/* 
+====floating===== */
+.floating-icons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+  }
+  
+  /* Individual icons */
+  .floating-icons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+  }
+  
+  /* Individual icons */
+  .floating-icons a {
+    text-decoration: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .floating-icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Icon styles */
+  .floating-icons a i {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Specific icon colors */
+  .floating-icons .facebook {
+    background-color: #3b5998;
+  }
+  
+  .floating-icons .youtube {
+    background-color: #FF0000;
+  }
+  
+  .floating-icons .linkin {
+    background-color: #016FAC;
+  }
+  
+  .floating-icons .messenger {
+    background-color: #016FAC;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .floating-icons a {
+      width: 40px;
+      height: 40px;
+    }
+    .floating-icons a i {
+      font-size: 20px;
+    }
+  }
+
+  /* Floating Messenger Button */
+#customMessengerButton {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Facebook_Messenger_logo_2023.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0084FF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  #customMessengerButton:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  /* End floating========= */
